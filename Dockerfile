@@ -1,7 +1,7 @@
 FROM composer:1.7 as build
 
 COPY app/ /app/
-RUN composer install --no-interaction --no-scripts --no-progress --optimize-autoloader 
+RUN composer install --no-interaction --no-progress --optimize-autoloader
 WORKDIR /app/
 
 FROM php:7.2-alpine3.8
