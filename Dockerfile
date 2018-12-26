@@ -8,6 +8,7 @@ FROM php:7.2-alpine3.8
 ENV PATH "$PATH:/app/vendor/bin/"
 COPY --from=build /app/ /app/
 
+WORKDIR /code/
 # Build arguments
 ARG BUILD_DATE
 ARG BUILD_REF
