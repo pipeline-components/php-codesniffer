@@ -33,7 +33,7 @@ phpcs PSR2:
     - phpcs -s -p --colors --extensions=php --standard=PSR2 .
 ```
 
-```
+```yaml
 php-compatibility 7.3:
   stage: test
   image: pipelinecomponents/php-codesniffer:latest
