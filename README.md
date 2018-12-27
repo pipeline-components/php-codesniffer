@@ -14,7 +14,14 @@
 
 ## Usage
 
-The image is for running codesniffer, codesniffer is installed in /app/ in case you need to customize the install before usage. The image is based on php:7.2-alpine3.8
+The image is for running codesniffer, codesniffer is installed in /app/ in case you need to customize the install before usage.
+Default the following packages are installed:
+
+- squizlabs/php_codesniffer
+- phpcompatibility/php-compatibility
+- dealerdirect/phpcodesniffer-composer-installer
+
+The image is based on php:7.2-alpine3.8
 
 ## Codesniffers
 
@@ -24,6 +31,20 @@ phpcs PSR2:
   image: pipelinecomponents/php-codesniffer:latest
   script:
     - phpcs -s -p --colors --extensions=php --standard=PSR2 .
+```
+
+```
+php-compatibility 7.3:
+  stage: test
+  image: pipelinecomponents/php-codesniffer:latest
+  variables:
+    PHPVERSION: "7.3"
+  script:
+    - >-
+      phpcs -s -p --colors
+      --standard=PHPCompatibility
+      --extensions=php
+      --runtime-set testVersion ${PHPVERSION} .
 ```
 
 ## Versioning
