@@ -1,2 +1,9 @@
 ---
 include: https://gitlab.com/pipeline-components/ci-config/raw/master/pipeline.yml
+
+test amd64:
+  variables:
+    BUILD_ARCH: amd64
+  extends: .test
+  script:
+    - docker run --rm "${CI_REGISTRY_IMAGE}/${BUILD_ARCH}:${CI_COMMIT_SHA}"  phpcs --version
