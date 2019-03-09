@@ -1,11 +1,12 @@
 {
+  "commitMessageAction": "Updates",
+  "commitMessagePrefix": ":arrow_up:",
+  "commitMessageTopic": "{{depName}}",
   "extends": [
     "config:base"
   ],
-  "commitMessageAction": "Updates",
-  "commitMessageTopic": "{{depName}}",
-  "commitMessagePrefix": ":arrow_up:",
   "labels": [
     "Type: Maintenance"
-  ]
+  ],
+  "separateMultipleMajor": true
 }
