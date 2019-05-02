@@ -8,5 +8,8 @@
   "labels": [
     "Type: Maintenance"
   ],
+  "composer": {
+   "enabled": true
+  },
   "separateMultipleMajor": true
 }
