@@ -7,6 +7,7 @@ WORKDIR /app/
 FROM php:7.3.6-alpine3.8
 ENV PATH "$PATH:/app/vendor/bin/"
 COPY --from=build /app/ /app/
+COPY php.ini /usr/local/etc/php/php.ini
 
 WORKDIR /code/
 # Build arguments
