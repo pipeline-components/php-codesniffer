@@ -6,7 +6,7 @@
     "config:base"
   ],
   "labels": [
-    "Type: Maintenance"
+    "Type::Maintenance"
   ],
   "composer": {
    "enabled": true
