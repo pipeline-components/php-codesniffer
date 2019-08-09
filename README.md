@@ -23,7 +23,7 @@ Default the following packages are installed:
 
 The image is based on php:7.2-alpine3.8
 
-## Codesniffers
+## Examples
 
 ```yaml
 phpcs PSR2:
