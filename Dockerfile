@@ -4,7 +4,7 @@ COPY app/ /app/
 RUN composer install --no-interaction --no-progress --optimize-autoloader
 WORKDIR /app/
 
-FROM php:7.3.9-alpine3.10
+FROM php:7.3.10-alpine3.10
 ENV PATH "$PATH:/app/vendor/bin/"
 COPY --from=build /app/ /app/
 COPY php.ini /usr/local/etc/php/php.ini
