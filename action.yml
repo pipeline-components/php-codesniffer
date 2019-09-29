@@ -1,0 +1,23 @@
+---
+name: "php-codesniffer"
+description: "php-codesniffer by Pipeline Components"
+author: "Robbert Müller <spam.me@grols.ch>"
+branding:
+  icon: "flag"
+  color: "green"
+inputs:
+  directory:
+    description: "Directory to check"
+    required: false
+    default: .
+  options:
+    description: "Additional options"
+    required: false
+    default: "-s -p --colors --extensions=php"
+runs:
+  using: "docker"
+  image: docker://pipelinecomponents/php-codesniffer
+  args:
+    - phpcs
+    - "${{ inputs.options }}"
+    - "${{ inputs.directory }}"
