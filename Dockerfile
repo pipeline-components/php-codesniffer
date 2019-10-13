@@ -4,7 +4,13 @@ COPY app/ /app/
 RUN composer install --no-interaction --no-progress --optimize-autoloader
 WORKDIR /app/
 
+FROM pipelinecomponents/base-entrypoint:0.1.0 as entrypoint
+
 FROM php:7.3.10-alpine3.10
+COPY --from=entrypoint /entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+ENV DEFAULTCMD phpcs
+
 ENV PATH "$PATH:/app/vendor/bin/"
 COPY --from=build /app/ /app/
 COPY php.ini /usr/local/etc/php/php.ini
