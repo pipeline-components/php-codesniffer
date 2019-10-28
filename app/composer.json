@@ -1,7 +1,7 @@
 {
     "type": "application",
     "require": {
-        "squizlabs/php_codesniffer": "3.5.1",
+        "squizlabs/php_codesniffer": "3.5.2",
         "phpcompatibility/php-compatibility": "9.3.2",
         "dealerdirect/phpcodesniffer-composer-installer": "0.5.0"
     }
