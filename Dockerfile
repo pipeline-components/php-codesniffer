@@ -4,7 +4,7 @@ COPY app/ /app/
 RUN composer install --no-interaction --no-progress --optimize-autoloader
 WORKDIR /app/
 
-FROM pipelinecomponents/base-entrypoint:0.1.1 as entrypoint
+FROM pipelinecomponents/base-entrypoint:0.2.0 as entrypoint
 
 FROM php:7.3.11-alpine3.10
 COPY --from=entrypoint /entrypoint.sh /entrypoint.sh
