@@ -6,7 +6,7 @@ WORKDIR /app/
 
 FROM pipelinecomponents/base-entrypoint:0.2.0 as entrypoint
 
-FROM php:7.3.12-alpine3.10
+FROM php:7.3.13-alpine3.10
 COPY --from=entrypoint /entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 ENV DEFAULTCMD phpcs
