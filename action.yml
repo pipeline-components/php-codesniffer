@@ -1,5 +1,5 @@
 ---
-name: "php-codesniffer"
+name: "pipeline-components-php-codesniffer"
 description: "php-codesniffer by Pipeline Components"
 author: "Robbert Müller <spam.me@grols.ch>"
 branding:
