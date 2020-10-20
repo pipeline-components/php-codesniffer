@@ -1,4 +1,4 @@
-FROM composer:1.10.13 as build
+FROM composer:1.10.15 as build
 
 COPY app/ /app/
 RUN composer install --no-interaction --no-progress --optimize-autoloader
