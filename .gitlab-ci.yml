@@ -9,11 +9,11 @@ test amd64:
     BUILD_ARCH: amd64
   extends: .test
   script:
-    - docker run --rm "${CI_REGISTRY_IMAGE}/${BUILD_ARCH}:${CI_COMMIT_SHA}"  phpcs --version
+    - docker run --rm "${CI_REGISTRY_IMAGE}/build:${BUILD_ARCH}-${CI_COMMIT_SHA}"  phpcs --version
 
 test amd64 defaultcmd:
   variables:
     BUILD_ARCH: amd64
   extends: .test
   script:
-    - docker run --rm "${CI_REGISTRY_IMAGE}/${BUILD_ARCH}:${CI_COMMIT_SHA}"  --version
+    - docker run --rm "${CI_REGISTRY_IMAGE}/build:${BUILD_ARCH}-${CI_COMMIT_SHA}"  --version
