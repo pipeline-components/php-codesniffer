@@ -28,7 +28,7 @@ The image is based on php:7.2-alpine3.8
 ```yaml
 phpcs PSR2:
   stage: linting
-  image: pipelinecomponents/php-codesniffer:latest
+  image: registry.gitlab.com/pipeline-components/php-codesniffer:latest
   script:
     - phpcs -s -p --colors --extensions=php --standard=PSR2 .
 ```
@@ -36,7 +36,7 @@ phpcs PSR2:
 ```yaml
 php-compatibility 7.3:
   stage: test
-  image: pipelinecomponents/php-codesniffer:latest
+  image: registry.gitlab.com/pipeline-components/php-codesniffer:latest
   variables:
     PHPVERSION: "7.3"
   script:
