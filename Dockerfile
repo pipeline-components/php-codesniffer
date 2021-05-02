@@ -4,7 +4,7 @@ FROM php:7.4.6-alpine3.10 as build
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 WORKDIR /app/
 COPY app/ /app/
-RUN chmod a+rx /usr/bin/composer && /usr/bin/composer install --no-interaction --no-scripts --no-progress --optimize-autoloader
+RUN chmod a+rx /usr/bin/composer && /usr/bin/composer install --no-interaction --no-progress --optimize-autoloader
 
 FROM pipelinecomponents/base-entrypoint:0.4.0 as entrypoint
 
