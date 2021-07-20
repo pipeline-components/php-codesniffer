@@ -14,6 +14,8 @@ ENTRYPOINT ["/entrypoint.sh"]
 ENV DEFAULTCMD phpcs
 
 ENV PATH "$PATH:/app/vendor/bin/"
+COPY --from=composer /usr/bin/composer /usr/bin/composer
+RUN chmod a+rx /usr/bin/composer
 COPY --from=build /app/ /app/
 COPY php.ini /usr/local/etc/php/php.ini
 
