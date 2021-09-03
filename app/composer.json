@@ -6,5 +6,8 @@
         "dealerdirect/phpcodesniffer-composer-installer": "0.7.1",
         "moxio/php-codesniffer-sniffs": "2.5.1",
         "slevomat/coding-standard": "7.0.4"
-    }
+    },
+    "license": "MIT",
+    "description": "Pipeline Components Php-codesniffer",
+    "name": "pipelinecomponents/php-codesniffer"
 }
