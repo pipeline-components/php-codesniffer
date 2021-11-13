@@ -6,7 +6,7 @@ WORKDIR /app/
 COPY app/ /app/
 RUN chmod a+rx /usr/bin/composer && /usr/bin/composer install --no-interaction --no-progress --optimize-autoloader
 
-FROM pipelinecomponents/base-entrypoint:0.4.0 as entrypoint
+FROM pipelinecomponents/base-entrypoint:0.5.0 as entrypoint
 
 FROM php:7.4.6-alpine3.10
 COPY --from=entrypoint /entrypoint.sh /entrypoint.sh
