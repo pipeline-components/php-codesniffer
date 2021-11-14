@@ -1,7 +1,7 @@
 ---
 include:
   - project: 'pipeline-components/org/config'
-    ref: v1.0.0
+    ref: v2.0.0
     file: pipeline.yml
 
 test amd64:
