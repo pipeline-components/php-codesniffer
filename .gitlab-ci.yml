@@ -1,4 +1,7 @@
 ---
+variables:
+  BUILD_ARM64: 1
+
 include:
   - project: 'pipeline-components/org/config'
     ref: v2.0.0
