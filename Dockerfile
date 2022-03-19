@@ -1,6 +1,6 @@
 FROM composer:2.2.9 as composer
 
-FROM php:8.0.17-alpine3.15 as build
+FROM php:8.1.4-alpine3.15 as build
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 WORKDIR /app/
 COPY app/ /app/
@@ -8,7 +8,7 @@ RUN chmod a+rx /usr/bin/composer && /usr/bin/composer install --no-interaction -
 
 FROM pipelinecomponents/base-entrypoint:0.5.0 as entrypoint
 
-FROM php:8.0.17-alpine3.15
+FROM php:8.1.4-alpine3.15
 COPY --from=entrypoint /entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 ENV DEFAULTCMD phpcs
