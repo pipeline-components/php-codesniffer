@@ -1,4 +1,4 @@
-FROM composer:2.2.9 as composer
+FROM composer:2.2.10 as composer
 
 FROM php:8.1.4-alpine3.15 as build
 COPY --from=composer /usr/bin/composer /usr/bin/composer
