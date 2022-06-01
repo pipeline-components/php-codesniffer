@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3e6e1d7b8aec01466d17532fa11afb2",
+    "content-hash": "cbab3a5dffac83305e3a34179f46b57b",
     "packages": [
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
@@ -83,21 +83,21 @@
         },
         {
             "name": "moxio/php-codesniffer-sniffs",
-            "version": "v2.5.3",
+            "version": "v2.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Moxio/php-codesniffer-sniffs.git",
-                "reference": "d922edaeb836c71528ce532440aec419fa468230"
+                "reference": "707df022571ed8fd0fae5749cca37a80b3daa69d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Moxio/php-codesniffer-sniffs/zipball/d922edaeb836c71528ce532440aec419fa468230",
-                "reference": "d922edaeb836c71528ce532440aec419fa468230",
+                "url": "https://api.github.com/repos/Moxio/php-codesniffer-sniffs/zipball/707df022571ed8fd0fae5749cca37a80b3daa69d",
+                "reference": "707df022571ed8fd0fae5749cca37a80b3daa69d",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1 || ^8.0",
-                "slevomat/coding-standard": "^6.0 || ^7.0 <= 7.0.18",
+                "slevomat/coding-standard": "^6.0 || ^7.0 <= 7.2.1",
                 "squizlabs/php_codesniffer": "^3.0.0"
             },
             "require-dev": {
@@ -128,9 +128,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Moxio/php-codesniffer-sniffs/issues",
-                "source": "https://github.com/Moxio/php-codesniffer-sniffs/tree/v2.5.3"
+                "source": "https://github.com/Moxio/php-codesniffer-sniffs/tree/v2.5.4"
             },
-            "time": "2022-02-01T07:21:33+00:00"
+            "time": "2022-05-31T08:28:51+00:00"
         },
         {
             "name": "phpcompatibility/php-compatibility",
@@ -369,5 +369,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
