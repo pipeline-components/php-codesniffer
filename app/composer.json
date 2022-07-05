@@ -9,5 +9,10 @@
     },
     "license": "MIT",
     "description": "Pipeline Components Php-codesniffer",
-    "name": "pipelinecomponents/php-codesniffer"
+    "name": "pipelinecomponents/php-codesniffer",
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
 }
