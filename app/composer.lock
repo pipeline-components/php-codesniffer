@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4cd6feddfeca9c80fa0f148b6e00c2ea",
+    "content-hash": "0561c77e93c3519a76cce217f7907131",
     "packages": [
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
@@ -83,21 +83,21 @@
         },
         {
             "name": "moxio/php-codesniffer-sniffs",
-            "version": "v2.5.5",
+            "version": "v2.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Moxio/php-codesniffer-sniffs.git",
-                "reference": "f54bdc7abeb867641ca2e62760e6624928788193"
+                "reference": "ccdf807b504bba691c54ced7f701d91599d7d9b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Moxio/php-codesniffer-sniffs/zipball/f54bdc7abeb867641ca2e62760e6624928788193",
-                "reference": "f54bdc7abeb867641ca2e62760e6624928788193",
+                "url": "https://api.github.com/repos/Moxio/php-codesniffer-sniffs/zipball/ccdf807b504bba691c54ced7f701d91599d7d9b4",
+                "reference": "ccdf807b504bba691c54ced7f701d91599d7d9b4",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1 || ^8.0",
-                "slevomat/coding-standard": "^6.0 || ^7.0 || ^8.0 <= 8.1.0",
+                "slevomat/coding-standard": "^6.0 || ^7.0 || ^8.0 <= 8.6.2",
                 "squizlabs/php_codesniffer": "^3.0.0"
             },
             "require-dev": {
@@ -128,9 +128,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Moxio/php-codesniffer-sniffs/issues",
-                "source": "https://github.com/Moxio/php-codesniffer-sniffs/tree/v2.5.5"
+                "source": "https://github.com/Moxio/php-codesniffer-sniffs/tree/v2.5.6"
             },
-            "time": "2022-06-27T19:23:27+00:00"
+            "time": "2022-10-31T15:00:33+00:00"
         },
         {
             "name": "phpcompatibility/php-compatibility",
