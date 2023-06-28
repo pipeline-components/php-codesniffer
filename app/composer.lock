@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c258c3d06e82358284f66032ff7a298",
+    "content-hash": "3ed47112817683b4b61f8fd470672275",
     "packages": [
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
@@ -86,16 +86,16 @@
         },
         {
             "name": "moxio/php-codesniffer-sniffs",
-            "version": "v2.5.7",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Moxio/php-codesniffer-sniffs.git",
-                "reference": "3736019cf87c8ba19255eea40298079ff0f7fdac"
+                "reference": "9d280d0d470b3e2664b68a6deabd73fc73ac8374"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Moxio/php-codesniffer-sniffs/zipball/3736019cf87c8ba19255eea40298079ff0f7fdac",
-                "reference": "3736019cf87c8ba19255eea40298079ff0f7fdac",
+                "url": "https://api.github.com/repos/Moxio/php-codesniffer-sniffs/zipball/9d280d0d470b3e2664b68a6deabd73fc73ac8374",
+                "reference": "9d280d0d470b3e2664b68a6deabd73fc73ac8374",
                 "shasum": ""
             },
             "require": {
@@ -131,9 +131,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Moxio/php-codesniffer-sniffs/issues",
-                "source": "https://github.com/Moxio/php-codesniffer-sniffs/tree/v2.5.7"
+                "source": "https://github.com/Moxio/php-codesniffer-sniffs/tree/2.6.1"
             },
-            "time": "2023-01-23T09:43:47+00:00"
+            "time": "2023-06-28T09:04:36+00:00"
         },
         {
             "name": "phpcompatibility/php-compatibility",
