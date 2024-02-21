@@ -4,7 +4,7 @@ FROM php:8.3.0-alpine3.17 as build
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 WORKDIR /app/
 COPY app/ /app/
-RUN chmod a+rx /usr/bin/composer && /usr/bin/composer install --no-interaction --no-progress --optimize-autoloader
+RUN export COMPOSER_ALLOW_SUPERUSER=1 && chmod a+rx /usr/bin/composer && /usr/bin/composer install --no-interaction --no-progress --optimize-autoloader
 
 FROM pipelinecomponents/base-entrypoint:0.5.0 as entrypoint
 
