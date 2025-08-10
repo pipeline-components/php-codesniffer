@@ -20,7 +20,7 @@ Default the following packages are installed:
 - phpcompatibility/php-compatibility
 - dealerdirect/phpcodesniffer-composer-installer
 
-The image is based on php:7.2-alpine3.8
+.
 
 ## Examples
 
